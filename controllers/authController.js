@@ -88,7 +88,6 @@ const refreshAccessTokenController = async (req, res) => {
                       
     const refreshToken = cookies.jwt;
 
-    console.log('refresh', refreshToken);
 
     try {                                   
         const decoded = jwt.verify(
