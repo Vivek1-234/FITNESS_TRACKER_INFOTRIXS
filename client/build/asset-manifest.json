@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.50fe50e4.css",
+    "main.js": "/static/js/main.787ddd33.js",
+    "static/media/trainer.png": "/static/media/trainer.d5ac997315b633881155.png",
+    "static/media/quotes.jpg": "/static/media/quotes.301298bda3d8997a183b.jpg",
+    "static/media/progress.jpg": "/static/media/progress.5e18e74ea221e61b376f.jpg",
+    "static/media/meal-image.jpg": "/static/media/meal-image.7383eb2ca7152ab11cf4.jpg",
+    "static/media/gym-05.png": "/static/media/gym-05.071f72fc91c50292ea29.png",
+    "static/media/workout-image.jpg": "/static/media/workout-image.857ea4938c491528750d.jpg",
+    "static/media/yoga-pose.png": "/static/media/yoga-pose.1009817918cc6df26064.png",
+    "static/media/extended.png": "/static/media/extended.65fee2ef368e447527a7.png",
+    "static/media/user.png": "/static/media/user.a6143582309785dca610.png",
+    "static/media/lunges.png": "/static/media/lunges.52e48615ce527a095bcf.png",
+    "index.html": "/index.html",
+    "main.50fe50e4.css.map": "/static/css/main.50fe50e4.css.map",
+    "main.787ddd33.js.map": "/static/js/main.787ddd33.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50fe50e4.css",
+    "static/js/main.787ddd33.js"
+  ]
+}
