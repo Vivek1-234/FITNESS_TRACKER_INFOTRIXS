@@ -74,6 +74,7 @@ const loginController = async (req, res) => {
                             
         return res.send(success(200, { accessToken }));
     } catch (e) {
+        console.log("Error is inside me");
         return res.send(error(500, e.message));
     }  
 };
