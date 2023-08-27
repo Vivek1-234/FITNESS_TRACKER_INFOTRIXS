@@ -32,20 +32,27 @@ app.use(morgan("common"));
 app.use(cookieParser());
 
 
+let origin = 'http://localhost:3000';
+console.log('here env', process.env.NODE_ENV);
+if(process.env.NODE_ENV === 'production') {
+    origin = process.env.CLIENT_ORIGIN;
+}
 app.use(
-  cors({
-    credentials: true,
-  })
+    cors({
+        credentials: true,
+        origin
+    })
 );
+
 app.use("/auth", authRouter);
 app.use("/workouts", workoutRouter);
 app.use("/meals", mealRouter);
 app.use("/user", userRouter);
 
-// app.get('/' , (req , res )=>{
+app.get('/' , (req , res )=>{
 
-// return res.send(success(200, 'Ok from server'));
-// });
+return res.send(success(200, 'Ok from server'));
+});
 
 app.use(express.static(path.join(__dirname, "./client/build")));
 
