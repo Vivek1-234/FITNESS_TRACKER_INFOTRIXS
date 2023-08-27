@@ -12,14 +12,14 @@ import store from "../redux/store";
 import { setLoading, showToast } from "../redux/slices/appConfigSlice";
 import { TOAST_FAILURE } from "../App";
 
-let baseURL = 'http://localhost:4000/';
-console.log('env is ', process.env.NODE_ENV); 
-if(process.env.NODE_ENV === 'production') {
-    baseURL = process.env.REACT_APP_SERVER_BASE_URL
-} 
+// let baseURL = 'http://localhost:4000/';
+// console.log('env is ', process.env.NODE_ENV); 
+// if(process.env.NODE_ENV === 'production') {
+//     baseURL = process.env.REACT_APP_SERVER_BASE_URL
+// } 
 
 export const axiosClient = axios.create({
-  baseURL,
+  // baseURL,
  // we are passing cookies that's why withcredential is true
  withCredentials: true, 
 });
@@ -55,11 +55,17 @@ axiosClient.interceptors.response.use(
       // means the access token has expired
       originalRequest._retry = true;
 
-      const response = await axios
+      // const response = await axios
+      //   .create({
+      //     withCredentials: true,
+      //   })
+      //   .get(`${origin}/auth/refresh`);
+
+        const response = await axios
         .create({
           withCredentials: true,
         })
-        .get(`${origin}/auth/refresh`);
+        .get(`/auth/refresh`);
 
       if (response.data.status === "ok") {
         setItem(KEY_ACCESS_TOKEN, response.data.result.accessToken);
