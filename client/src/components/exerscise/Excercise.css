@@ -1,0 +1,82 @@
+/* Excercise.css */
+
+.containerexcercise {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .container_exerscise {
+    padding: 50px 0;
+    
+  }
+  
+  .exerscise_top {
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 5px 4px 8px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section_titleexcer {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .highlights {
+    color: #ff6b6b;
+  }
+  
+  .exerscise_wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .exerscise_item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .exerscise_item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .exerscise_icon {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .exerscise_icon img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .exerscise_content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .exerscise_content h4 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Media Queries */
+  
+  @media (max-width: 768px) {
+    .section_titleexcer {
+      font-size: 28px;
+    }
+  
+    .exerscise_item {
+      width: calc(50% - 20px);
+    }
+  }
+  

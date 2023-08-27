@@ -1,0 +1,87 @@
+/* Profile.css */
+
+.profile11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f0f0f0;
+    margin-top: -40px;
+  }
+
+  
+  
+  .profile-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .user-img5 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+  }
+  
+  .user-name1 {
+    margin: 0;
+    color: #333333;
+  }
+  
+  .user-info1 {
+    margin: 15px 0;
+  }
+  
+  .result1 {
+    color: #007bff;
+  }
+  
+  .updatebutton {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .updatebutton:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-card {
+      padding: 10px;
+    }
+  
+    .user-img5 {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .user-name2 {
+      font-size: 1.2rem;
+    }
+  
+    .user-info1 h4 {
+      font-size: 1rem;
+    }
+  
+    .result1 {
+      font-size: 2.2rem;
+    }
+  
+    .updatebutton {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
+  

@@ -1,0 +1,32 @@
+
+.bmitablebox table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  
+  .bmitablebox  th,
+  .bmitablebox  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .bmitablebox  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+
+  }
+  
+  /* Responsive Media Queries */
+  
+  @media (max-width: 768px) {
+    .bmitablebox  th,
+    .bmitablebox  td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
+  

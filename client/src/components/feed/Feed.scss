@@ -1,0 +1,129 @@
+.home-content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: lightpink;
+    margin-top: -40px;
+  }
+  
+  .heading1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .workout-part5,
+  .meal-part5,
+  .motivation-quote5,
+  .bmi5,
+  .progress5 {
+    background-color:lightcyan;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-workout5,
+  .image5,
+  .quote-image5,
+  .progress-image5 {
+    width: 100%;
+    max-width: 100%;
+    height:auto;
+    border-radius: 10px;
+    border: 2px dashed red;
+
+  }
+  
+  .Add-Exercise5,
+  .Add-Meal5,
+  .calculate5,
+  .see-exercise5,
+  .see-meal5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  
+
+  
+
+   button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .add-workout-button11 ,
+  .add-meal-button1 {
+    text-align: center;
+    padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s ease-in-out;
+      &:hover {
+        background-color: #0056b3;
+      }
+  }
+
+  
+  
+  .bmi5{
+    background-color:lightblue;
+     
+    .About-bmi{
+      margin: 5%;
+      line-height: 200%;
+      font-weight: 600;
+    }
+  }
+
+  .bmi-para5 {
+    text-align: center;
+  
+    mark {
+      background-color: pink;
+      padding: 3px 3px;
+      border-radius: 4px;
+    }
+  }
+  
+  .add-workout-button11 {
+     margin-left: 45%;
+  }
+
+   
+  @media screen and (min-width: 768px) {
+    .image-workout5,
+    .image5,
+    .quote-image5,
+    .progress-image5 {
+  
+      max-width: 50%;
+      height: auto;
+      border-radius: 10px;
+      margin-left: 25%;
+     
+    }
+
+    
+    
+  }

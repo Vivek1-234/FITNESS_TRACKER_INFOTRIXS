@@ -1,0 +1,46 @@
+.meal-box{
+    background-color: antiquewhite;
+    width: 80%;
+    margin-left: 10%;
+    height: 40rem;
+    border-radius: 20px ;
+   
+  }
+  
+  .meal-box h2 {
+      color:darkviolet;
+      background-color:yellow;
+        text-align: center;
+        border-radius: 50px ;
+  }
+  
+  .container-meal{
+    
+      height: 90%;
+      overflow-y: scroll;
+     
+  }
+  
+  
+  .meal-detail{
+      width: 50%;
+      display: block;
+      text-align: center;
+      border: 1px solid aqua;
+      margin-left: 24%;
+      background-color: dodgerblue;
+      border-radius: 5px;
+      box-shadow: 1px 1px 10px  dodgerblue;
+      
+  
+  }
+  
+  .meal-detail p{
+      font-size: large;
+      font-weight: 700;
+      
+  }
+  
+  .underline{
+  border: 1px dashed blue;
+  }

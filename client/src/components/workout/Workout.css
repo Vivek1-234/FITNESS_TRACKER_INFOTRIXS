@@ -1,0 +1,60 @@
+
+
+.workout_form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(128, 128, 128, 0.207);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.Exercise-name-input,
+.Reps-input {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+.submit-button-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.exercise_detail {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  height: 2rem;
+}
+
+.tablerow:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tablerow td {
+  padding: 8px;
+  text-align: center;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 768px) {
+  .workout_form {
+    padding: 10px;
+  }
+}
