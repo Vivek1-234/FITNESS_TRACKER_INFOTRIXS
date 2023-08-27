@@ -31,20 +31,25 @@ app.use(express.json({ limit: "50mb" }));
 app.use(morgan('common')); 
 app.use(cookieParser()); 
 
-app.use(cors({
-    credentials:true,    
-})); 
+
+ let origin = process.env.CLIENT_ORIGIN;
 
 
+app.use(
+    cors({
+        credentials: true,
+        origin
+    })
+);
 app.use('/auth' , authRouter); 
 app.use('/workouts' , workoutRouter)
 app.use('/meals' , mealRouter)
 app.use("/user", userRouter); 
 
-// app.get('/' , (req , res )=>{
+app.get('/' , (req , res )=>{
 
-// return res.send(success(200, 'Ok from server'));
-// }); 
+return res.send(success(200, 'Ok from server'));
+}); 
 
 app.use(express.static(path.join(__dirname , './client/build')))
  
@@ -56,7 +61,7 @@ app.get('*' , function(_ , res ){
 const PORT = process.env.PORT || 4001;  
 
 dbconnect();   
-app.listen( PORT, (req , res) =>{
+app.listen( PORT, () =>{
     console.log(`Listening on PORT :${PORT}`);  
 }); 
 
