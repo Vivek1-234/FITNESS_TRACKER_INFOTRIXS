@@ -46,10 +46,10 @@ app.use('/workouts' , workoutRouter)
 app.use('/meals' , mealRouter)
 app.use("/user", userRouter); 
 
-app.get('/' , (req , res )=>{
+// app.get('/' , (req , res )=>{
 
-return res.send(success(200, 'Ok from server'));
-}); 
+// return res.send(success(200, 'Ok from server'));
+// }); 
 
 app.use(express.static(path.join(__dirname , './client/build')))
  
