@@ -21,7 +21,7 @@ import { TOAST_FAILURE } from "../App";
 export const axiosClient = axios.create({
   // baseURL,
  // we are passing cookies that's why withcredential is true
- withCredentials: true, 
+//  withCredentials: true, 
 });
 
 
@@ -63,7 +63,7 @@ axiosClient.interceptors.response.use(
 
         const response = await axios
         .create({
-          withCredentials: true,
+          // withCredentials: true,
         })
         .get(`/auth/refresh`);
 

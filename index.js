@@ -35,15 +35,16 @@ app.use(cookieParser());
 // let origin = 'http://localhost:3000';
 // console.log('here env', process.env.NODE_ENV);
 // if(process.env.NODE_ENV === 'production') {
-    origin = process.env.CLIENT_ORIGIN;
+    // origin = process.env.CLIENT_ORIGIN;
 // }
-app.use(
-    cors({
-        credentials: true,
-        origin
-    })
-);
+// app.use(
+//     cors({
+//         credentials: true,
+//         origin
+//     })
+// );
 
+app.use(cors()); 
 app.use("/auth", authRouter);
 app.use("/workouts", workoutRouter);
 app.use("/meals", mealRouter);
